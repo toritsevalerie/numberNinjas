@@ -1,0 +1,58 @@
+.welcomeContainer {
+  
+  height: 100vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  .ninjaContainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+
+    .ninjaCharacterContainer {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      .ninjas {
+        width: 320px;
+      }
+    }
+    .infoContainer {
+      text-align: center;
+      h1 {
+        font-size: 70px;
+        margin: 0px;
+      }
+      h2 {
+        font-size: 26px;
+      }
+      p {
+        line-height: 25px;
+        font-size: 20px;
+      }
+      .startGameButton {
+        border: none;
+        padding: 20px 50px;
+        border-radius: 20px;
+        background: linear-gradient(
+          to right,
+          rgb(73, 73, 242),
+          rgb(1, 1, 1)
+        );
+        transition: all 0.3s ease;
+        display: inline-block;
+        font-family: "Macondo Swash Caps", cursive;
+        color: white;
+        font-size: 20px;
+        font-weight: bold;
+        cursor: pointer;
+        &:hover {
+          border: 4px solid rgb(255, 77, 0);
+        }
+      }
+    }
+  }
+}

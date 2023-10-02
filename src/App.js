@@ -10,19 +10,23 @@ function App() {
   const [showGameMode, setShowGameMode] = useState(false);
   const [gameMode, setGameMode] = useState(null);
 
+  // function that sets welcomepage to true in order to show
   const showWelcomePage = () => {
     setShowWelcome(true);
   };
 
+  // sets showWelcome to true so that after load the welcome page is rendered
   useEffect(() => {
     showWelcomePage();
   }, []);
 
+  // hides welcome page when start button is clicked and shows playermode page
   const handleStartButtonClick = () => {
     setShowWelcome(false);
     setShowPlayerMode(true);
   };
-
+  // mode - represents the argument passed on
+  // when the mode is clicked player mode doesn't render anymore and the game mode that was clicked renders
   const handlePlayerModeClick = (mode) => {
     setGameMode(mode);
     setShowPlayerMode(false);
@@ -32,7 +36,9 @@ function App() {
     <div className="wrapper">
       {showWelcome && <Welcome startButtonClick={handleStartButtonClick} />}
       {showPlayerMode && <PlayerMode playerModeClick={handlePlayerModeClick} />}
-      {showGameMode && <Game mode={gameMode} />}
+      {showGameMode && (
+        <Game mode={gameMode} playerModeClick={handlePlayerModeClick} showPlayerMode = {setShowPlayerMode} />
+      )}
     </div>
   );
 }
