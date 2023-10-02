@@ -4,8 +4,7 @@ import NextLevelPage from "./NextLevel.js";
 import RestartLevel from "./RestartLevel.js";
 import WrongAnswer from "./WrongAnswer.js";
 
-
-const EasyMode = ({
+const ModerateMode = ({
   num1,
   num2,
   operation,
@@ -21,7 +20,7 @@ const EasyMode = ({
   const [correctAnswerCount, setCorrectAnswerCount] = useState(0);
   // intialize state that counts the number of wrong attempts
   const [wrongAnswerCount, setWrongAnswerCount] = useState(0);
-  // intializing state to check for an ettmept to combat the wronganser component from rendering immediately after easy mode is clicked/default mode
+  // intializing state to check for an ettmept to combat the wronganser component from rendering immediately after moderate mode is clicked/default mode
   const [attempted, setAttempted] = useState(false);
 
   const handleAnswerClick = (itemValue) => {
@@ -48,13 +47,12 @@ const EasyMode = ({
       <RestartLevel
         playerModeClick={playerModeClick}
         currentMode={mode}
-        restartCurrentModeAgain = { () => { 
+        restartCurrentModeAgain={() => {
           setCorrectAnswerCount(0);
           setWrongAnswerCount(0);
           setAnswerClick(false);
           setAttempted(false);
-
-        } }
+        }}
       />
     );
   }
@@ -86,7 +84,7 @@ const EasyMode = ({
     );
   }
   return (
-    <div className="easyModePage">
+    <div className="moderateModePage">
       <h2>Lets Begin</h2>
       <div className="mathProblem">
         <p>
@@ -106,4 +104,4 @@ const EasyMode = ({
   );
 };
 
-export default EasyMode;
+export default ModerateMode;
