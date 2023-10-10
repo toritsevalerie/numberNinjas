@@ -2,6 +2,7 @@
 @import "./variables.scss";
 
 .welcomeContainer {
+  height: 100vh;
   background-size: cover;
   background-color: $backgroundgreen;
   background-repeat: no-repeat;
@@ -41,18 +42,14 @@
     animation: bounceX 13s linear infinite alternate,
       bounceY 7s linear infinite alternate;
     width: 30px;
+    height: 40px;
   }
   @keyframes bounceX {
     100% {
-      transform: translateX(calc(100vw));
+      transform: translateX(calc(100vw - 30px));
     }
   }
 
-  @keyframes bounceY {
-    100% {
-      transform: translateY(calc(100vh));
-    }
-  }
 
   .ninjaContainer {
     margin-top: 50px;
@@ -105,8 +102,8 @@
         font-weight: bold;
         cursor: pointer;
         &:hover {
-          transform: scale(1.1); 
-          background-color: #45a049; 
+          transform: scale(1.1);
+          background-color: #45a049;
         }
         &:active {
           transform: scale(0.95);

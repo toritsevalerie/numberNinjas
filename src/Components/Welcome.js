@@ -8,36 +8,22 @@ import minusIcon from "../assets/minusSign.svg";
 const Welcome = ({ startButtonClick }) => {
   return (
     <div className={styles.welcomeContainer}>
-      <img src={minusIcon} className={styles.minusIcon} alt="minus logo" />
       <div className={styles.titleContainer}>
         <p className={styles.number}>Number</p>
-        <img
-          src={additionIcon}
-          className={styles.additionIcon}
-          alt="addition logo"
-        />
+
         <p className={styles.ninjas}>Ninjas</p>
       </div>
       <img src={ninjaXlogo} className={styles.logoIcon} alt="X logo" />
-      <img
-        src={additionIcon}
-        className={styles.additionIcon}
-        alt="addition logo"
-      />
+
       <div className={styles.ninjaContainer}>
         <div className={styles.ninjaCharacterContainer}>
-          <img
-            src={additionIcon}
-            className={styles.additionIcon}
-            alt="addition logo"
-          />
           <img
             className={styles.ninjaOne}
             src={ninjaOne}
             alt="illustrartion of a ninja kicking pose"
           />
         </div>
-        <img src={minusIcon} className={styles.minusIcon} alt="minus logo" />
+
         <img
           src={additionIcon}
           className={styles.additionIcon}
