@@ -3,7 +3,6 @@ import ninjaOne from "../assets/sarahNinja.png";
 import ninjaTwo from "../assets/ashleyNinja.png";
 import ninjaXlogo from "../assets/numberNinjasX.svg";
 import additionIcon from "../assets/additionSign.svg";
-import minusIcon from "../assets/minusSign.svg";
 
 const Welcome = ({ startButtonClick }) => {
   return (
@@ -24,11 +23,6 @@ const Welcome = ({ startButtonClick }) => {
           />
         </div>
 
-        <img
-          src={additionIcon}
-          className={styles.additionIcon}
-          alt="addition logo"
-        />
         <div className={styles.infoContainer}>
           <h2>Have Fun & Learn Math!</h2>
           <hr className={styles.coloredLine} />

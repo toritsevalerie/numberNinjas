@@ -3,8 +3,14 @@
 
 .welcomeContainer {
   height: 100vh;
-  background-size: cover;
-  background-color: $backgroundgreen;
+  background: linear-gradient(
+    -8deg,
+    #d6ebff 27.5%, 
+    #d0decd 27.5%, 
+    #d0decd 72.5%, 
+    #fff8de 72.5%
+  );
+
   background-repeat: no-repeat;
   display: flex;
   flex-direction: column;
@@ -39,17 +45,9 @@
   .additionIcon,
   .minusIcon {
     position: absolute;
-    animation: bounceX 13s linear infinite alternate,
-      bounceY 7s linear infinite alternate;
     width: 30px;
     height: 40px;
   }
-  @keyframes bounceX {
-    100% {
-      transform: translateX(calc(100vw - 30px));
-    }
-  }
-
 
   .ninjaContainer {
     margin-top: 50px;
@@ -62,7 +60,7 @@
       align-items: center;
       .ninjaOne,
       .ninjaTwo {
-        width: 250px;
+        width: 280px;
       }
       .ninjaOne {
         margin-bottom: 200px;
