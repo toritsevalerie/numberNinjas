@@ -1,14 +1,61 @@
+@import "./customFont.scss";
+@import "./variables.scss";
+
 .welcomeContainer {
-  
-  height: 100vh;
   background-size: cover;
+  background-color: $backgroundgreen;
   background-repeat: no-repeat;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  .titleContainer {
+    margin-top: 30px;
+    .number,
+    .ninjas {
+      font-size: 70px;
+      font-family: "SuperGame";
+      letter-spacing: 10px;
+      -webkit-text-stroke: 2px white;
+      padding: 0px 10px;
+      text-align: center;
+      width: fit-content;
+    }
+    .number {
+      margin: 0px 300px 0px 0px;
+      background-color: $dullYellow;
+    }
+    .ninjas {
+      margin: 0px 0px 0px 300px;
+      background-color: $dullRed;
+    }
+  }
+  .logoIcon {
+    position: absolute;
+    top: 15%;
+    left: 40%;
+  }
+  .additionIcon,
+  .minusIcon {
+    position: absolute;
+    animation: bounceX 13s linear infinite alternate,
+      bounceY 7s linear infinite alternate;
+    width: 30px;
+  }
+  @keyframes bounceX {
+    100% {
+      transform: translateX(calc(100vw));
+    }
+  }
+
+  @keyframes bounceY {
+    100% {
+      transform: translateY(calc(100vh));
+    }
+  }
 
   .ninjaContainer {
+    margin-top: 50px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
 
@@ -16,41 +63,53 @@
       display: flex;
       justify-content: center;
       align-items: center;
-      .ninjas {
-        width: 320px;
+      .ninjaOne,
+      .ninjaTwo {
+        width: 250px;
+      }
+      .ninjaOne {
+        margin-bottom: 200px;
       }
     }
     .infoContainer {
       text-align: center;
-      h1 {
-        font-size: 70px;
-        margin: 0px;
-      }
       h2 {
         font-size: 26px;
+        margin-top: 0px;
       }
-      p {
+      .coloredLine {
+        border: none;
+        height: 8px;
+        background: linear-gradient(to right, $dullRed 50%, $dullYellow 50%);
+        transform: rotate(182deg);
+      }
+      .infoBlurb {
         line-height: 25px;
         font-size: 20px;
+        margin-top: 30px;
+        word-spacing: 12px;
+        line-height: 30px;
       }
       .startGameButton {
-        border: none;
-        padding: 20px 50px;
-        border-radius: 20px;
-        background: linear-gradient(
-          to right,
-          rgb(73, 73, 242),
-          rgb(1, 1, 1)
-        );
+        margin: 50px 0px;
+        width: fit-content;
+        border: 6px solid $dullYellow;
+        padding: 9px 25px;
+        border-radius: 0px;
+        background-color: $dullRed;
         transition: all 0.3s ease;
         display: inline-block;
-        font-family: "Macondo Swash Caps", cursive;
+        font-family: "SuperGame";
         color: white;
-        font-size: 20px;
+        font-size: 30px;
         font-weight: bold;
         cursor: pointer;
         &:hover {
-          border: 4px solid rgb(255, 77, 0);
+          transform: scale(1.1); 
+          background-color: #45a049; 
+        }
+        &:active {
+          transform: scale(0.95);
         }
       }
     }
