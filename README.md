@@ -2,7 +2,7 @@
 
 _Number Ninjas is an online game and learning platform designed for children to practice addition and subtraction effortlessly at various difficulty levels._
 
-![Number Ninjas Banner](link-to-banner-image.jpg) 
+![PLAY IT HERE]((https://number-ninjas.netlify.app/)) 
 
 ## 🎯 Features
 
