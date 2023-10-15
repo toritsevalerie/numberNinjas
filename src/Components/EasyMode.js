@@ -3,7 +3,8 @@ import RightAnswer from "./RightAnswer.js";
 import NextLevelPage from "./NextLevel.js";
 import RestartLevel from "./RestartLevel.js";
 import WrongAnswer from "./WrongAnswer.js";
-
+import backButton from '../assets/backButton.png'
+import styles from "../styles/easyMode.module.scss";
 
 const EasyMode = ({
   num1,
@@ -86,9 +87,14 @@ const EasyMode = ({
     );
   }
   return (
-    <div className="easyModePage">
-      <h2>Lets Begin</h2>
-      <div className="mathProblem">
+    <div className={styles.easyModePage}>
+      <div className={styles.easyTag}>
+
+       <p>Easy Mode</p> 
+      </div>
+      <div className={styles.mathProblemContainer}>
+
+      <div className={styles.mathProblem}>
         <p>
           {num1}
           {operation}
@@ -101,6 +107,10 @@ const EasyMode = ({
             </li>
           ))}
         </ul>
+      </div>
+      </div>
+      <div className={styles.backButtonContainer}>
+        <img src={backButton} alt="back button" />
       </div>
     </div>
   );
