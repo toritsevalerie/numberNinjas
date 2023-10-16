@@ -3,6 +3,8 @@ import RightAnswer from "./RightAnswer.js";
 import NextLevelPage from "./NextLevel.js";
 import RestartLevel from "./RestartLevel.js";
 import WrongAnswer from "./WrongAnswer.js";
+import chalkBoard from "../assets/chalkBoard.png";
+import styles from "../styles/moderateMode.module.scss";
 
 const ModerateMode = ({
   num1,
@@ -84,21 +86,26 @@ const ModerateMode = ({
     );
   }
   return (
-    <div className="moderateModePage">
-      <h2>Lets Begin</h2>
-      <div className="mathProblem">
-        <p>
-          {num1}
-          {operation}
-          {num2}=?
-        </p>
-        <ul>
-          {choices.map((item, index) => (
-            <li key={index}>
-              <button onClick={() => handleAnswerClick(item)}>{item}</button>
-            </li>
-          ))}
-        </ul>
+    <div className={styles.moderateModePage}>
+      <div className={styles.moderateTag}>
+        <p>Moderate Mode</p>
+      </div>
+      <div className={styles.mathProblemContainer}>
+        <img src={chalkBoard} alt="chalkboard" />
+        <div className={styles.mathProblem}>
+          <p className={styles.equation}>
+            {num1}
+            {operation}
+            {num2} =
+          </p>
+          <ul className={styles.choices}>
+            {choices.map((item, index) => (
+              <li key={index}>
+                <button onClick={() => handleAnswerClick(item)}>{item}</button>
+              </li>
+            ))}
+          </ul>
+        </div>
       </div>
     </div>
   );
