@@ -1,13 +1,18 @@
 import styles from "../styles/playerMode.module.scss";
-import BackArrow from "./BackArrow";
+import ninjaXlogo from "../assets/numberNinjasX.svg";
+import backButton from "../assets/backButton.png";
 
 const PlayerMode = ({ playerModeClick }) => {
   return (
     <div className={styles.background}>
+      <div className={styles.logo}>
+        <img
+          src={ninjaXlogo}
+          className={styles.logoIcon}
+          alt="number ninjas game logo"
+        />
+      </div>
       <div className={styles.playerModeOptionsContainer}>
-        <div className={styles.backButtonContainer}>
-          <BackArrow />
-        </div>
         <div className={styles.playerModeOptions}>
           <button
             onClick={() => {
@@ -31,6 +36,9 @@ const PlayerMode = ({ playerModeClick }) => {
             HARD
           </button>
         </div>
+      </div>
+      <div className={styles.backButtonContainer}>
+        <img src={backButton} className={styles.backButton} alt="back button" />
       </div>
     </div>
   );

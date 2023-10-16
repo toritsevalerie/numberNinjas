@@ -1,82 +1,53 @@
 @import "./customFont.scss";
 @import "./variables.scss";
 
-.welcomeContainer {
-  height: 100vh;
-  background: linear-gradient(
-    -8deg,
-    #d6ebff 27.5%, 
-    #d0decd 27.5%, 
-    #d0decd 72.5%, 
-    #fff8de 72.5%
-  );
-
-  background-repeat: no-repeat;
+.wrapper {
+  padding: 30px;
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  .titleContainer {
-    margin-top: 30px;
-    .number,
-    .ninjas {
-      font-size: 70px;
-      font-family: "SuperGame";
-      letter-spacing: 10px;
-      -webkit-text-stroke: 2px white;
-      padding: 0px 10px;
-      text-align: center;
-      width: fit-content;
-    }
-    .number {
-      margin: 0px 300px 0px 0px;
-      background-color: $dullYellow;
-    }
-    .ninjas {
-      margin: 0px 0px 0px 300px;
-      background-color: $dullRed;
-    }
-  }
-  .logoIcon {
-    position: absolute;
-    top: 15%;
-    left: 40%;
-  }
-  .additionIcon,
-  .minusIcon {
-    position: absolute;
-    width: 30px;
-    height: 40px;
-  }
-
-  .ninjaContainer {
-    margin-top: 50px;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-
-    .ninjaCharacterContainer {
+  background-image: url(../assets/homePageBckg.svg);
+  .homepage {
+    height: 85vh;
+    border: 2px white solid;
+    border-radius: 10px;
+    padding: 30px;
+    overflow-x: hidden;
+    .navBar {
       display: flex;
-      justify-content: center;
-      align-items: center;
-      .ninjaOne,
-      .ninjaTwo {
-        width: 280px;
+      justify-content: space-between;
+      .navigationItems {
+        color: white;
+        font-family: "SuperGame";
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 5px;
+        p {
+          max-width: fit-content;
+          font-size: 18px;
+          transition: all 0.3s ease;
+          &:hover {
+          transform: scale(1.1);
+          cursor: pointer;
+  
+        }
+        }
       }
-      .ninjaOne {
-        margin-bottom: 200px;
+      .logo {
+        display: flex;
+        justify-content: center;
+        width: 150px;
       }
     }
+
     .infoContainer {
       text-align: center;
-      h2 {
-        font-size: 26px;
+      h1 {
+        color: #7c2424;
         margin-top: 0px;
-      }
-      .coloredLine {
-        border: none;
-        height: 8px;
-        background: linear-gradient(to right, $dullRed 50%, $dullYellow 50%);
-        transform: rotate(182deg);
+        -webkit-text-stroke: 2px #e0c04d;
+        font-family: "SuperGame";
+        font-size: 60px;
       }
       .infoBlurb {
         line-height: 25px;
@@ -84,13 +55,17 @@
         margin-top: 30px;
         word-spacing: 12px;
         line-height: 30px;
+        padding: 0px 50px;
+        color: white;
+        background-color: #7c2424;
+        padding: 10px 0px;
       }
       .startGameButton {
         margin: 50px 0px;
         width: fit-content;
         border: 6px solid $dullYellow;
         padding: 9px 25px;
-        border-radius: 0px;
+        border-radius: 100px;
         background-color: $dullRed;
         transition: all 0.3s ease;
         display: inline-block;

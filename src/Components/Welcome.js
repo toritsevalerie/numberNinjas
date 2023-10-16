@@ -1,31 +1,27 @@
 import styles from "../styles/welcome.module.scss";
-import ninjaOne from "../assets/sarahNinja.png";
-import ninjaTwo from "../assets/ashleyNinja.png";
 import ninjaXlogo from "../assets/numberNinjasX.svg";
-import additionIcon from "../assets/additionSign.svg";
 
 const Welcome = ({ startButtonClick }) => {
   return (
-    <div className={styles.welcomeContainer}>
-      <div className={styles.titleContainer}>
-        <p className={styles.number}>Number</p>
-
-        <p className={styles.ninjas}>Ninjas</p>
-      </div>
-      <img src={ninjaXlogo} className={styles.logoIcon} alt="X logo" />
-
-      <div className={styles.ninjaContainer}>
-        <div className={styles.ninjaCharacterContainer}>
-          <img
-            className={styles.ninjaOne}
-            src={ninjaOne}
-            alt="illustrartion of a ninja kicking pose"
-          />
+    <div className={styles.wrapper}>
+      <div className={styles.homepage}>
+        <div className={styles.navBar}>
+          <div className={styles.navigationItems}>
+            <p>Practice</p>
+            <p>How It Works</p>
+          </div>
+          <div className={styles.logo}>
+            <img
+              src={ninjaXlogo}
+              className={styles.logoIcon}
+              alt="number ninjas game logo"
+            />
+          </div>
         </div>
 
         <div className={styles.infoContainer}>
-          <h2>Have Fun & Learn Math!</h2>
-          <hr className={styles.coloredLine} />
+          <h1>Have Fun & Learn Math!</h1>
+
           <p className={styles.infoBlurb}>
             Dive into the exciting world of Number Ninjas! Embark on thrilling
             mathematical missions, sharpen your skills, and conquer challenges
@@ -37,13 +33,6 @@ const Welcome = ({ startButtonClick }) => {
           <button className={styles.startGameButton} onClick={startButtonClick}>
             Start Game
           </button>
-        </div>
-        <div className={styles.ninjaCharacterContainer}>
-          <img
-            className={styles.ninjaTwo}
-            src={ninjaTwo}
-            alt="illustration of a ninja standing"
-          />
         </div>
       </div>
     </div>
