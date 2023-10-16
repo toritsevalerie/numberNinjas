@@ -1,9 +1,10 @@
 @import "./customFont.scss";
 @import "./variables.scss";
 
-.easyModePage {
-  background-image: url(../assets/easyModebckg.svg);
-  .easyTag {
+
+.moderateModePage {
+  background-image: url(../assets/moderateModebckg.svg);
+  .moderateTag {
     display: flex;
     justify-content: center;
     p {
