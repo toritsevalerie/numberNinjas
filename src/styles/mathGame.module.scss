@@ -1,0 +1,35 @@
+@import "./variables.scss";
+
+.wrapper {
+  text-align: center;
+  padding: 100px 50px;
+  background-color: #c4e0ce;
+  p {
+    font-size: 20px;
+    line-height: 35px;
+    margin: 0px 150px 90px 150px;
+  }
+  .gameCategories {
+    display: flex;
+    .addition,
+    .subtraction,
+    .multiplication {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      .icons {
+        width: 100px;
+      }
+      h3 { 
+        margin-top: 30px;
+      }
+      p {
+        margin: 0px 60px 50px 50px;
+      }
+      .dropDownMenu {
+        display: none;
+      }
+    }
+  }
+}

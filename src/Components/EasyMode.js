@@ -25,6 +25,11 @@ const EasyMode = ({
   // intializing state to check for an ettmept to combat the wronganser component from rendering immediately after easy mode is clicked/default mode
   const [attempted, setAttempted] = useState(false);
 
+  // const [showRightAnswerAlert, setShowRightAnswerAlert] = useState(false);
+
+  // const [showWrongAnswerAlert, setShowWrongAnswerAlert] = useState(false);
+
+
   const handleAnswerClick = (itemValue) => {
     setAttempted(true);
     console.log(answerClick);
@@ -36,6 +41,8 @@ const EasyMode = ({
       setWrongAnswerCount((prevCount) => prevCount + 1);
     }
   };
+
+
 
   // function that counts right answer until it gets to 3 then renders nextLevel component
 

@@ -1,0 +1,73 @@
+@import "./variables.scss";
+
+.wrapper {
+  padding: 50px 113px;
+  .navigationBar {
+    display: flex;
+    list-style: none;
+    padding: 0px;
+    justify-content: space-between;
+    .navigationItems {
+      display: flex;
+      cursor: pointer;
+      .logo {
+        width: fit-content;
+        h1 {
+          font-size: 22px;
+          transition: ease-in-out 0.3s;
+          &:hover {
+            transform: scale(1.1);
+            cursor: pointer;
+          }
+        }
+      }
+      li {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .navItems {
+        display: grid;
+        list-style: none;
+        justify-content: space-between;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 44px;
+        margin-left: 50px;
+        .parentsItem,
+        .studentsItem,
+        .practiceItem {
+          transition: ease-in-out 0.3s;
+          display: flex;
+          div {
+            margin-left: 5px;
+          }
+          &:hover {
+            transform: scale(1.1);
+            font-weight: 500;
+            cursor: pointer;
+          }
+        }
+        .dropDownMenu {
+          display: none;
+        }
+      }
+    }
+    .getStartedButton {
+      padding: 0px 5px;
+      button {
+        padding: 16px 20px;
+        border: none;
+        background-color: $pastelGreen;
+        border-radius: 5px;
+        font-weight: 550;
+        font-size: 14px;
+        transition: ease-in-out 0.3s;
+        &:hover {
+          transform: scale(1.1);
+          background-color: rgb(62, 241, 62);
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}

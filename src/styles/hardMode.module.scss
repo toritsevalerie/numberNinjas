@@ -1,0 +1,68 @@
+@import "./customFont.scss";
+@import "./variables.scss";
+
+.hardModePage {
+  background-image: url(../assets/hardModebckg.svg);
+  .hardTag {
+    display: flex;
+    justify-content: center;
+    p {
+      margin: 50px 0px;
+      border: 6px solid $dullYellow;
+      padding: 9px 25px;
+      border-radius: 100px;
+      background-color: $dullRed;
+      transition: all 0.3s ease;
+      display: inline-block;
+      font-family: "SuperGame";
+      color: white;
+      font-size: 30px;
+      font-weight: bold;
+    }
+  }
+  .mathProblemContainer {
+    // background-image: url("../assets/chalkBoard.png");
+    // background-repeat: no-repeat;
+    // height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: auto;
+    .mathProblem {
+      position: absolute;
+      top: 230px;
+      .equation {
+        font-size: 64px;
+        margin: 60px 0px 45px 0px;
+        text-align: center;
+        font-family: "SuperGame";
+        color: white;
+        letter-spacing: 18px;
+        -webkit-text-stroke: 2px black;
+      }
+      .choices {
+        list-style: none;
+        display: flex;
+        justify-content: center;
+        padding: 0px;
+        li {
+          button {
+            transition: all ease-in-out 0.3s;
+            border: none;
+            margin: 0px 10px;
+            background-color: $dullYellow;
+            font-size: 60px;
+            font-family: "SuperGame";
+            padding: 10px 40px;
+            border-radius: 10px;
+            &:hover {
+              transform: scale(1.1);
+              cursor: pointer;
+            }
+          }
+        }
+      }
+    }
+  }
+}

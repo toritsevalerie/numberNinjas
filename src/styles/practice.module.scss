@@ -1,0 +1,39 @@
+@import "./variables.scss";
+
+.wrapper {
+  text-align: center;
+  background-color: #b078f6;
+  padding: 100px 120px;
+  .practice {
+    .title {
+      font-size: 34px;
+      color: white;
+    }
+    .titleInfo {
+      font-size: 20px;
+      margin: 0px 120px;
+      line-height: 30px;
+      margin-bottom: 40px;
+      color: white;
+    }
+    .practiceButtonContainer {
+      button {
+        border: none;
+        border-radius: 5px;
+        padding: 20px 30px;
+        background-color: #c4e0ce;
+        font-weight: 600;
+        transition: ease-in-out 0.3s;
+        &:hover {
+          transform: scale(1.1);
+          background-color: rgb(235, 80, 9);
+          color: white;
+          cursor: pointer;
+        }
+      }
+    }
+    img {
+      margin-bottom: 50px;
+    }
+  }
+}
