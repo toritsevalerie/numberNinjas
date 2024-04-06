@@ -1,0 +1,112 @@
+.wrapper {
+  padding: 50px 113px;
+}
+.wrapper .navigationBar {
+  display: flex;
+  list-style: none;
+  padding: 0px;
+  justify-content: space-between;
+}
+.wrapper .navigationBar .navigationItems {
+  display: flex;
+  cursor: pointer;
+}
+.wrapper .navigationBar .navigationItems .logo {
+  width: -moz-fit-content;
+  width: fit-content;
+}
+.wrapper .navigationBar .navigationItems .logo a {
+  text-decoration: none;
+  color: black;
+}
+.wrapper .navigationBar .navigationItems .logo a h1 {
+  font-size: 22px;
+  transition: ease-in-out 0.3s;
+}
+.wrapper .navigationBar .navigationItems .logo a h1:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+}
+.wrapper .navigationBar .navigationItems li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.wrapper .navigationBar .navigationItems .navItems {
+  display: grid;
+  list-style: none;
+  justify-content: space-between;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 44px;
+  margin-left: 50px;
+}
+.wrapper .navigationBar .navigationItems .navItems .parentItemContainer,
+.wrapper .navigationBar .navigationItems .navItems .studentItemContainer {
+  display: flex;
+  flex-direction: column;
+}
+.wrapper .navigationBar .navigationItems .navItems .parentItemContainer .parentsItem,
+.wrapper .navigationBar .navigationItems .navItems .parentItemContainer .studentsItem,
+.wrapper .navigationBar .navigationItems .navItems .parentItemContainer .practiceItem,
+.wrapper .navigationBar .navigationItems .navItems .studentItemContainer .parentsItem,
+.wrapper .navigationBar .navigationItems .navItems .studentItemContainer .studentsItem,
+.wrapper .navigationBar .navigationItems .navItems .studentItemContainer .practiceItem {
+  transition: ease-in-out 0.3s;
+  display: flex;
+}
+.wrapper .navigationBar .navigationItems .navItems .parentItemContainer .parentsItem div,
+.wrapper .navigationBar .navigationItems .navItems .parentItemContainer .studentsItem div,
+.wrapper .navigationBar .navigationItems .navItems .parentItemContainer .practiceItem div,
+.wrapper .navigationBar .navigationItems .navItems .studentItemContainer .parentsItem div,
+.wrapper .navigationBar .navigationItems .navItems .studentItemContainer .studentsItem div,
+.wrapper .navigationBar .navigationItems .navItems .studentItemContainer .practiceItem div {
+  margin-left: 5px;
+}
+.wrapper .navigationBar .navigationItems .navItems .parentItemContainer .parentsItem:hover,
+.wrapper .navigationBar .navigationItems .navItems .parentItemContainer .studentsItem:hover,
+.wrapper .navigationBar .navigationItems .navItems .parentItemContainer .practiceItem:hover,
+.wrapper .navigationBar .navigationItems .navItems .studentItemContainer .parentsItem:hover,
+.wrapper .navigationBar .navigationItems .navItems .studentItemContainer .studentsItem:hover,
+.wrapper .navigationBar .navigationItems .navItems .studentItemContainer .practiceItem:hover {
+  transform: scale(1.1);
+  font-weight: 500;
+  cursor: pointer;
+}
+.wrapper .navigationBar .navigationItems .navItems .dropDownMenuParent {
+  position: absolute;
+  margin-top: 85px;
+  border: 2px solid black;
+  border-radius: 5px;
+}
+.wrapper .navigationBar .navigationItems .navItems .dropDownMenuParent li {
+  padding: 7px 6px;
+  border: 0.5px solid black;
+}
+.wrapper .navigationBar .navigationItems .navItems .dropDownMenuStudent {
+  position: absolute;
+  margin-top: 146px;
+  border: 2px solid black;
+  border-radius: 5px;
+}
+.wrapper .navigationBar .navigationItems .navItems .dropDownMenuStudent li {
+  border: 0.5px solid black;
+  padding: 7px 6px;
+}
+
+.getStartedButton {
+  padding: 0px 5px;
+}
+.getStartedButton button {
+  padding: 16px 20px;
+  border: none;
+  background-color: #C4E0CE;
+  border-radius: 5px;
+  font-weight: 550;
+  font-size: 14px;
+  transition: ease-in-out 0.3s;
+}
+.getStartedButton button:hover {
+  transform: scale(1.1);
+  background-color: rgb(62, 241, 62);
+  cursor: pointer;
+}/*# sourceMappingURL=nav.module.css.map */
