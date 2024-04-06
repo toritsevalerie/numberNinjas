@@ -1,0 +1,31 @@
+@import "./variables.scss";
+
+.wrapper {
+  display: flex;
+  padding: 80px 113px;
+  justify-content: space-between;
+  ul {
+    list-style: none;
+  }
+  .heading {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 15px;
+  }
+  .groupedSectionFooter {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    ul {
+      list-style: none;
+      li {
+        margin: 0px 0px 8px 0px;
+        transition: ease-in-out 0.2s;
+        cursor: pointer;
+        &:hover {
+          font-weight: 600;
+        }
+      }
+    }
+  }
+}

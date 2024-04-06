@@ -3,7 +3,9 @@ import ninjaXlogo from "../assets/numberNinjasX.svg";
 
 const Welcome = ({ startButtonClick }) => {
   return (
-    <div className={styles.wrapper}>
+    <div
+      className={styles.wrapper}
+    >
       <div className={styles.homepage}>
         <div className={styles.navBar}>
           <div className={styles.navigationItems}>

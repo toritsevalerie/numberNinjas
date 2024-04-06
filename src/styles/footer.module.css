@@ -1,0 +1,29 @@
+.wrapper {
+  display: flex;
+  padding: 80px 113px;
+  justify-content: space-between;
+}
+.wrapper ul {
+  list-style: none;
+}
+.wrapper .heading {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+.wrapper .groupedSectionFooter {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+}
+.wrapper .groupedSectionFooter ul {
+  list-style: none;
+}
+.wrapper .groupedSectionFooter ul li {
+  margin: 0px 0px 8px 0px;
+  transition: ease-in-out 0.2s;
+  cursor: pointer;
+}
+.wrapper .groupedSectionFooter ul li:hover {
+  font-weight: 600;
+}/*# sourceMappingURL=footer.module.css.map */
