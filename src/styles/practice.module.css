@@ -1,0 +1,33 @@
+.wrapper {
+  text-align: center;
+  background-color: #b078f6;
+  padding: 100px 120px;
+}
+.wrapper .practice .title {
+  font-size: 34px;
+  color: white;
+}
+.wrapper .practice .titleInfo {
+  font-size: 20px;
+  margin: 0px 120px;
+  line-height: 30px;
+  margin-bottom: 40px;
+  color: white;
+}
+.wrapper .practice .practiceButtonContainer button {
+  border: none;
+  border-radius: 5px;
+  padding: 20px 30px;
+  background-color: #c4e0ce;
+  font-weight: 600;
+  transition: ease-in-out 0.3s;
+}
+.wrapper .practice .practiceButtonContainer button:hover {
+  transform: scale(1.1);
+  background-color: rgb(235, 80, 9);
+  color: white;
+  cursor: pointer;
+}
+.wrapper .practice img {
+  margin-bottom: 50px;
+}/*# sourceMappingURL=practice.module.css.map */

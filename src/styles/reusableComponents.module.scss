@@ -1,5 +1,9 @@
-button {
-  .backArrowImage {
-    width: 70px;
-  }
+
+.dropDownButton { 
+    width: 55px;
+    cursor: pointer;
+    &:hover {
+            transform: scale(1.1);
+            cursor: pointer;
+          }
 }

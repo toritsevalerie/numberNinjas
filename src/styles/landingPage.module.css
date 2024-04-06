@@ -1,0 +1,103 @@
+.wrapper .header {
+  text-align: center;
+  margin: 50px 113px;
+}
+.wrapper .header h2 {
+  font-size: 64px;
+  color: #7c2424;
+  margin: 0px 50px 20px 50px;
+  -webkit-text-stroke: 1px black;
+}
+.wrapper .header p {
+  font-size: 24px;
+  line-height: 40px;
+  margin: 0px 220px 20px 220px;
+}
+.wrapper .infoSection {
+  background-color: #CADFFF;
+  padding: 100px 50px;
+  text-align: center;
+}
+.wrapper .infoSection h2 {
+  font-size: 34px;
+}
+.wrapper .infoSection p {
+  margin: 0px 200px;
+  font-size: 20px;
+  line-height: 35px;
+}
+.wrapper .gameContainer {
+  text-align: center;
+  padding: 100px 50px;
+  background-color: #c4e0ce;
+}
+.wrapper .gameContainer p {
+  font-size: 20px;
+  line-height: 35px;
+  margin: 0px 150px 90px 150px;
+}
+.wrapper .gameContainer .gameCategories {
+  display: flex;
+}
+.wrapper .gameContainer .gameCategories .addition,
+.wrapper .gameContainer .gameCategories .subtraction,
+.wrapper .gameContainer .gameCategories .multiplication {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.wrapper .gameContainer .gameCategories .addition .icons,
+.wrapper .gameContainer .gameCategories .subtraction .icons,
+.wrapper .gameContainer .gameCategories .multiplication .icons {
+  width: 100px;
+}
+.wrapper .gameContainer .gameCategories .addition h3,
+.wrapper .gameContainer .gameCategories .subtraction h3,
+.wrapper .gameContainer .gameCategories .multiplication h3 {
+  margin-top: 30px;
+}
+.wrapper .gameContainer .gameCategories .addition p,
+.wrapper .gameContainer .gameCategories .subtraction p,
+.wrapper .gameContainer .gameCategories .multiplication p {
+  margin: 0px 60px 50px 50px;
+}
+.wrapper .gameContainer .gameCategories .addition .dropDownMenu,
+.wrapper .gameContainer .gameCategories .subtraction .dropDownMenu,
+.wrapper .gameContainer .gameCategories .multiplication .dropDownMenu {
+  position: absolute;
+  margin-top: 430px;
+}
+.wrapper .practiceContainer {
+  text-align: center;
+  background-color: #b078f6;
+  padding: 100px 120px;
+}
+.wrapper .practiceContainer .practice .title {
+  font-size: 34px;
+  color: white;
+}
+.wrapper .practiceContainer .practice .titleInfo {
+  font-size: 20px;
+  margin: 0px 120px;
+  line-height: 30px;
+  margin-bottom: 40px;
+  color: white;
+}
+.wrapper .practiceContainer .practice .practiceButtonContainer button {
+  border: none;
+  border-radius: 5px;
+  padding: 20px 30px;
+  background-color: #c4e0ce;
+  font-weight: 600;
+  transition: ease-in-out 0.3s;
+}
+.wrapper .practiceContainer .practice .practiceButtonContainer button:hover {
+  transform: scale(1.1);
+  background-color: rgb(235, 80, 9);
+  color: white;
+  cursor: pointer;
+}
+.wrapper .practiceContainer .practice img {
+  margin-bottom: 50px;
+}/*# sourceMappingURL=landingPage.module.css.map */

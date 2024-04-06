@@ -1,0 +1,103 @@
+@import "./variables.scss";
+
+.wrapper {
+  .header {
+    text-align: center;
+    margin: 50px 113px;
+    h2 {
+      font-size: 64px;
+      color: $dullRed;
+      margin: 0px 50px 20px 50px;
+      -webkit-text-stroke: 1px black;
+    }
+    p {
+      font-size: 24px;
+      line-height: 40px;
+      margin: 0px 220px 20px 220px;
+    }
+  }
+  .infoSection {
+    background-color: $blue;
+    padding: 100px 50px;
+    text-align: center;
+    h2 {
+      font-size: 34px;
+    }
+    p {
+      margin: 0px 200px;
+      font-size: 20px;
+      line-height: 35px;
+    }
+  }
+  .gameContainer {
+    text-align: center;
+    padding: 100px 50px;
+    background-color: #c4e0ce;
+    p {
+      font-size: 20px;
+      line-height: 35px;
+      margin: 0px 150px 90px 150px;
+    }
+    .gameCategories {
+      display: flex;
+      .addition,
+      .subtraction,
+      .multiplication {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        .icons {
+          width: 100px;
+        }
+        h3 {
+          margin-top: 30px;
+        }
+        p {
+          margin: 0px 60px 50px 50px;
+        }
+        .dropDownMenu {
+          position: absolute;
+          margin-top: 430px;
+        }
+      }
+    }
+  }
+  .practiceContainer {
+    text-align: center;
+    background-color: #b078f6;
+    padding: 100px 120px;
+    .practice {
+      .title {
+        font-size: 34px;
+        color: white;
+      }
+      .titleInfo {
+        font-size: 20px;
+        margin: 0px 120px;
+        line-height: 30px;
+        margin-bottom: 40px;
+        color: white;
+      }
+      .practiceButtonContainer {
+        button {
+          border: none;
+          border-radius: 5px;
+          padding: 20px 30px;
+          background-color: #c4e0ce;
+          font-weight: 600;
+          transition: ease-in-out 0.3s;
+          &:hover {
+            transform: scale(1.1);
+            background-color: rgb(235, 80, 9);
+            color: white;
+            cursor: pointer;
+          }
+        }
+      }
+      img {
+        margin-bottom: 50px;
+      }
+    }
+  }
+}

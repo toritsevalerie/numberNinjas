@@ -4,6 +4,7 @@ import ModerateMode from "./ModerateMode";
 import HardMode from "./HardMode";
 
 const Game = ({ mode, playerModeClick, showPlayerMode }) => {
+  
   // define states needed in the equation
   const [num1, setNum1] = useState(0);
   const [num2, setNum2] = useState(0);
